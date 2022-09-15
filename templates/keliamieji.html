@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keliamieji metai</title>
+</head>
+<body>
+<h1>Keliamieji metai 1900 - 2100</h1>
+{%for x in range(1899, 2101)%}
+{%if (x % 400 == 0) and (x % 100 == 0)%}
+<p>{{x}}</p>
+{%elif (x % 4 == 0) and (x % 100 != 0)%}
+<p>{{x}}</p>
+{%endif%}
+{%endfor%}
+</body>
+</html>
